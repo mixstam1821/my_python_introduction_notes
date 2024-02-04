@@ -1,4 +1,6 @@
-# Numpy speeds up python computations, calling C, C++ and Fortran!!
+# Numpy speeds up Python computations, calling C, C++ and Fortran!!
+# https://numpy.org/doc/stable/user/quickstart.html
+# Numpy is my everyday tool for computing and analyzing large arrays !!
 
 import numpy as np
 my_list = [1, 2, 3, 4, 5]
@@ -124,3 +126,20 @@ import numpy as np
 # Read data from a text file into a NumPy array
 data = np.loadtxt('data.txt')
 
+
+
+
+data = np.array([1, 2, 3])
+reversed_arr = np.flip(data)
+
+data[1] #2
+data[0:2] #array([1, 2])
+data[1:] #array([2, 3])
+data[-2:] #array([2, 3])
+
+arr = np.arange(6).reshape((2, 3))
+
+
+x = np.array([[1 , 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+x.flatten()
+x.ravel()
